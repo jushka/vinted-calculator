@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vinted calculator</title>
+  <script src="https://kit.fontawesome.com/2962e7b818.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vinted.css">
+</head>
+<body>
+  <h1>Why should you use Vinted.com?</h1>
+
+  <div class="flex-container">
+    <div class="box">
+      <p>How much money do you spend on clothes per month?</p>
+      <div class="flex-container">
+        <input id="monthlyExpense" type="number">
+        <div class="text-box">euros/month</div>
+      </div>
+      <i class="fas fa-equals"></i>
+      <div class="flex-container">
+        <div class="output-box" id="yearlyExpense">?</div>
+        <div class="text-box">euros/year</div>
+      </div>
+      <p>Now let's find out how much you could save by using Vinted.com!</p>
+    </div>
+  </div>
+
+  <div id="paths">
+    <div class="box">
+      <h2><i class="fas fa-check"></i> Easy path</h2>
+      <p>Let's say you will sell some of your bought clothes every year. What part of clothes do you think you would sell per whole year?</p>
+      <form>
+        <input type="radio" name="sellPercent" id="sellPercent25" value="25" class="form-radio">
+        <label for="sellPercent25">Maybe one fourth</label>
+        <br>
+        <input type="radio" name="sellPercent" id="sellPercent50" value="50" class="form-radio">
+        <label for="sellPercent50">Half, I guess</label>
+        <br>
+        <input type="radio" name="sellPercent" id="sellPercent100" value="100" class="form-radio">
+        <label for="sellPercent100">Everything!</label>
+      </form>
+      <p>Assuming you would sell your clothes in good condition, you could get around 30 percent of their initial price. So that would save you...</p>
+      <div class="flex-container">
+        <div class="output-box" id="saveOnSell">?</div>
+        <div class="text-box">euros/year</div>
+      </div>
+      <button id="saveBtn">Show me result!</button>
+    </div>
+
+    <div class="box">
+      <h2><i class="fas fa-euro-sign"></i> Practical path</h2>
+      <p>Now let's imagine that instead of some brand new clothes you start buying second-hand clothes with unique history! What part of clothes do you think you would buy second-hand?</p>
+      <form>
+        <input type="radio" name="buyPercent" id="buyPercent25" value="25" class="form-radio">
+        <label for="buyPercent25">Maybe one fourth</label>
+        <br>
+        <input type="radio" name="buyPercent" id="buyPercent50" value="50" class="form-radio">
+        <label for="buyPercent50">Half, I guess</label>
+        <br>
+        <input type="radio" name="buyPercent" id="buyPercent100" value="100" class="form-radio">
+        <label for="buyPercent100">Everything!</label>
+      </form>
+      <p>Assuming you would buy second-hand clothes at 30 percent of their initial price and later through the year you would sell all your clothes (newly bought at 30 percent, used at 50 percent). You could save...</p>
+      <div class="flex-container">
+        <div class="output-box" id="saveOnBuy">?</div>
+        <div class="text-box">euros/year</div>
+      </div>
+      <button id="buyBtn">Show me result!</button>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="box">
+      <p>Selling your clothes and especially buying them second-hand can save you a lot of money!</p>
+      <h2>So what are you waiting for?</h2>
+      <p>Well, if saving money is not enough for you, would you like to see other reasons?</p>
+      <button id="showReasonsBtn">Yes, I would!</button>
+      <ul>
+        <li><i class="fas fa-angle-right"></i> You would have a chance to prevent waste!</li>
+        <li><i class="fas fa-angle-right"></i> You would be giving clothes a new life!</li>
+        <li><i class="fas fa-angle-right"></i> You would be choosing from a huge collection!</li>
+        <li><i class="fas fa-angle-right"></i> You would be wearing something with a soul, therefore being unique!</li>
+        <li><i class="fas fa-angle-right"></i> You would have a chance to find something that is trendy again!</li>
+        <li><i class="fas fa-angle-right"></i> It is like a treasure hunt, so exciting!</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="vinted.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  background-image: url(memphis-mini.png);
+}
+
+h1 {
+  color: #09B1BA;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+input[type="number"] {
+  color: #444444;
+  width: 120px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 5px;
+  padding: 3px;
+  outline: none;
+  border: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  -moz-appearance:textfield; /* Firefox */
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+input[type="number"]:focus {
+  border: 1px solid #09B1BA;
+  box-shadow: 0 0 5px #09B1BA;
+  -webkit-box-shadow: 0 0 5px #09B1BA;
+  -moz-box-shadow: 0 0 5px #09B1BA;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #09B1BA;
+  letter-spacing: 3px;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #ffffff;
+  outline: none;
+  margin: 16px 0 10px 0;
+  padding: 9px 14px;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #09B1BA;
+  color: #ffffff;
+  border: 1px solid #09B1BA;
+}
+
+label {
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-box {
+  width: 120px;
+  height: 37px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 2rem;
+  color: #444444;
+  padding: 3px;
+  background-color: #ffffff;
+}
+
+.text-box {
+  width: 5px;
+}
+
+.fa-equals {
+  margin: 7px;
+  color: #444444;
+  font-size: 1.3rem;
+}
+
+.box {
+  width: 90%;
+  margin: 20px 0;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: #f1f1f1;
+  color: #444444;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 7px;
+  outline: none;
+}
+
+.form-radio:checked::before {
+  position: absolute;
+  font: 13px/1 "Open Sans", sans-serif;
+  left: 11px;
+  top: 7px;
+  content: "\02143";
+  transform: rotate(40deg);
+}
+
+.form-radio:hover {
+  background-color: #f7f7f7;
+}
+
+.form-radio:checked {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+  animation-name: opacity;
+  animation-duration: 0.8s;
+}
+
+#paths {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes opacity {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@media only screen and (min-width: 600px) {
+  input[type="number"] {
+    width: 200px;
+  }
+  .output-box {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #paths {
+    justify-content: space-around;
+  }
+  .box {
+    width: 45%;
+  }
+}
